@@ -42,16 +42,16 @@ Space & m::PgDn
 Space & x::BackSpace
 Space & c::Del 
 
- ;---Fn快捷键
+ ;---Fn快捷键(我的小键盘没Fn)
 Space & 1:: F1
 Space & 2:: F2
 Space & 3:: F3
 Space & 5:: F5
 Space & 6:: F6
 Space & =:: F12
-
 Space & Esc:: `
 
+ ;---恢复空格的功能；会有一丢丢延迟； 目前只是中文输入法空格按得快会有点影响；还能接受；
 Space:: Send {Space}
 
  ;---鼠标左键注释
@@ -77,8 +77,8 @@ return
 Space & d::
 Send {Ctrl down}+{Shift down}+[ + {Ctrl up}+{Shift up}
 Send {Down}
-Send {Home}
-Send {Shift}+{Up}
+Send {End}
+Send {Shift}+{Home}+{Up}
 ;Send {Shift}+{Home}
 Send {Delete}
 return
